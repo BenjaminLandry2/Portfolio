@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Landry | Power BI Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Nav alignment fix ── */
+    .nav-links {
+      align-items: center;
+    }
+
+    /* ── Example 1: Nav Pill ── */
+    .nav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .nav-pill:hover { opacity: 0.85; }
+
+    /* ── Example 6: Dedicated Contact Section ── */
+    .contact-section {
+      padding: 96px 32px;
+      text-align: center;
+      border-top: 1px solid var(--gray-200);
+      background: var(--white);
+    }
+    .contact-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+    .contact-name {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      color: var(--navy);
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
+    .contact-role {
+      font-size: 14px;
+      color: var(--gray-400);
+      margin-bottom: 36px;
+    }
+    .contact-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 4px 24px rgba(15,23,42,.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .contact-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(15,23,42,.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-brand">Benjamin Landry | Power BI Portfolio</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#project-01">Finance</a>
+        <a href="#project-02">Sales</a>
+        <a href="#project-03">Insurance</a>
+        <a href="#project-04">Investments</a>
+        <a href="mailto:benlandry5@gmail.com" class="nav-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          benlandry5@gmail.com
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Data Analytics &nbsp;·&nbsp; Business Intelligence &nbsp;·&nbsp; Power BI</p>
+      <h1 class="hero-headline">Turning data into<br /><em>decisions that matter.</em></h1>
+      <p class="hero-body">
+        A portfolio of end-to-end Power BI solutions — from raw data to executive-ready dashboards
+        that drive measurable business impact across finance, sales, insurance, and investment.
+      </p>
+      <div class="hero-cta">
+        <a href="#about" class="btn-primary">View Projects</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number">4</span><span class="stat-label">Dashboards</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-number">4</span><span class="stat-label">Industries</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-number">End-to-End</span><span class="stat-label">Workflow</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS STRIP -->
+  <div class="skills-strip">
+    <div class="skills-inner">
+      <span class="skills-label">Core Skills</span>
+      <div class="skills-list">
+        <span>Power BI</span>
+        <span>DAX</span>
+        <span>Power Query</span>
+        <span>Data Modeling</span>
+        <span>M Language</span>
+        <span>ETL Pipelines</span>
+        <span>Executive Dashboards</span>
+        <span>KPI Design</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-label">About This Portfolio</div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h2>Built to solve real business problems.</h2>
+            <p>
+              Each project in this portfolio demonstrates the complete analytical workflow — identifying a
+              business challenge, building a clean data model, designing an interactive dashboard, and
+              surfacing insights that translate directly into business action.
+            </p>
+            <p>
+              The dashboards are built with three principles in mind: <strong>clarity</strong> for
+              decision-makers, <strong>interactivity</strong> for exploratory analysis, and
+              <strong>impact</strong> — every insight connects to a measurable business outcome.
+            </p>
+          </div>
+          <div class="methodology reveal">
+            <div class="method-step">
+              <div class="method-num">01</div>
+              <div>
+                <h4>Business Problem</h4>
+                <p>The specific challenge or question the project addresses.</p>
+              </div>
+            </div>
+            <div class="method-step">
+              <div class="method-num">02</div>
+              <div>
+                <h4>Approach</h4>
+                <p>Data modeling, design, and Power BI techniques applied.</p>
+              </div>
+            </div>
+            <div class="method-step">
+              <div class="method-num">03</div>
+              <div>
+                <h4>Key Insights</h4>
+                <p>The most important findings surfaced by the dashboard.</p>
+              </div>
+            </div>
+            <div class="method-step">
+              <div class="method-num">04</div>
+              <div>
+                <h4>Business Impact</h4>
+                <p>How insights translate into actions and measurable value.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECT 01 ==================== -->
+    <section class="project-section" id="project-01">
+      <div class="project-accent accent-blue"></div>
+      <div class="container">
+
+        <div class="project-meta reveal">
+          <span class="project-index">Project 01</span>
+          <span class="project-industry">Finance</span>
+        </div>
+        <h2 class="project-heading reveal">Finance Dashboard</h2>
+        <p class="project-tagline reveal">Sales &amp; Segment Performance Analysis</p>
+
+        <div class="screenshot-area reveal">
+          <div class="screenshot-frame">
+            <div class="screenshot-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="screenshot-body screenshot-body--image">
+              <img src="images/image1.png" alt="Finance Dashboard — Sales & Segment Performance Analysis" />
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-problem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3>Business Problem</h3>
+            </div>
+            <p>A fictitious client sought to understand which product segments were driving the highest sales and where performance gaps existed across their portfolio.</p>
+          </div>
+
+          <div class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-approach">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <h3>Approach</h3>
+            </div>
+            <p>Developed an interactive Power BI dashboard to analyze sales and profit across products, customer segments, time, and geography. Enabled dynamic filtering by year, month, and region to support deeper exploration.</p>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-insights">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M6 20V10M10 20V4M14 20V14M18 20V8"/></svg>
+              </div>
+              <h3>Key Insights</h3>
+            </div>
+            <ul class="insight-list">
+              <li><span class="insight-dot"></span>Government segment is the primary revenue driver across most products.</li>
+              <li><span class="insight-dot"></span>Small Business is the top-performing segment for Velo.</li>
+              <li><span class="insight-dot"></span>Paseo is the highest-selling product overall.</li>
+              <li><span class="insight-dot"></span>Carretera underperforms significantly in Midmarket, Enterprise, and Channel Partners.</li>
+            </ul>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <h3>Business Impact</h3>
+            </div>
+            <ul class="impact-list">
+              <li>Reallocate sales focus toward high-performing segments (Government, Small Business).</li>
+              <li>Investigate underperformance in Carretera to improve product positioning.</li>
+              <li>Support data-driven decision-making through an intuitive, executive-ready dashboard.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECT 02 ==================== -->
+    <section class="project-section project-alt" id="project-02">
+      <div class="project-accent accent-teal"></div>
+      <div class="container">
+
+        <div class="project-meta reveal">
+          <span class="project-index">Project 02</span>
+          <span class="project-industry">Sales</span>
+        </div>
+        <h2 class="project-heading reveal">Sales Dashboard</h2>
+        <p class="project-tagline reveal">Product &amp; Reseller Performance Analysis</p>
+
+        <div class="screenshot-area reveal">
+          <div class="screenshot-frame">
+            <div class="screenshot-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="screenshot-body screenshot-body--image">
+              <img src="images/image2.png" alt="Sales Dashboard — Product & Reseller Performance Analysis" />
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-problem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3>Business Problem</h3>
+            </div>
+            <p>A fictitious client sought to identify which product categories and reseller segments drive revenue, and where performance gaps exist across time and regions.</p>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-insights">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M6 20V10M10 20V4M14 20V14M18 20V8"/></svg>
+              </div>
+              <h3>Key Insights</h3>
+            </div>
+            <ul class="insight-list">
+              <li><span class="insight-dot"></span>Bikes dominate revenue, far outperforming all other product categories.</li>
+              <li><span class="insight-dot"></span>Warehouse resellers are the top-performing channel, driving the majority of sales.</li>
+              <li><span class="insight-dot"></span>Sales trends show fluctuations between order date and due date, highlighting potential delays or fulfillment timing gaps.</li>
+            </ul>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <h3>Business Impact</h3>
+            </div>
+            <ul class="impact-list">
+              <li>Enables leadership to identify top-performing product categories (Bikes) and prioritize inventory and marketing efforts.</li>
+              <li>Highlights channel dependency on Warehouse resellers, informing diversification strategies.</li>
+              <li>Surfaces timing discrepancies between order and due dates, supporting operational improvements in fulfillment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECT 03 ==================== -->
+    <section class="project-section" id="project-03">
+      <div class="project-accent accent-rose"></div>
+      <div class="container">
+
+        <div class="project-meta reveal">
+          <span class="project-index">Project 03</span>
+          <span class="project-industry">Insurance</span>
+        </div>
+        <h2 class="project-heading reveal">Life Insurance Pricing Dashboard</h2>
+        <p class="project-tagline reveal">Risk Factor Analysis</p>
+
+        <div class="screenshot-area reveal">
+          <div class="screenshot-frame">
+            <div class="screenshot-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="screenshot-body screenshot-body--image">
+              <img src="images/image3.png" alt="Life Insurance Pricing Dashboard — Risk Factor Analysis" />
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-problem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3>Business Problem</h3>
+            </div>
+            <p>Insurance underwriting teams need to identify which customer risk factors most impact premium pricing to improve accuracy and profitability.</p>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-insights">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M6 20V10M10 20V4M14 20V14M18 20V8"/></svg>
+              </div>
+              <h3>Key Insights</h3>
+            </div>
+            <ul class="insight-list">
+              <li><span class="insight-dot"></span>Smoking status is the most significant cost driver, increasing premiums by ~280%, far exceeding all other factors.</li>
+              <li><span class="insight-dot"></span>Age has a strong positive correlation with premiums — customers aged 60&ndash;69 incur the highest charges.</li>
+              <li><span class="insight-dot"></span>BMI is a major pricing factor: obese and severely obese individuals pay significantly higher premiums.</li>
+              <li><span class="insight-dot"></span>The Southeast region shows the highest average charges, indicating geographic risk variation.</li>
+              <li><span class="insight-dot"></span>Family size has a moderate but noticeable impact; gender has minimal pricing influence.</li>
+            </ul>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <h3>Business Impact</h3>
+            </div>
+            <ul class="impact-list">
+              <li>Enables underwriting teams to prioritize high-impact risk factors (smoking, age, BMI) for more accurate pricing models.</li>
+              <li>Supports data-driven premium adjustments, improving risk segmentation and profitability.</li>
+              <li>Identifies opportunities to refine pricing strategies by region and customer profile.</li>
+              <li>Provides an executive-level view of risk contribution, improving transparency in underwriting decisions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECT 04 ==================== -->
+    <section class="project-section project-alt" id="project-04">
+      <div class="project-accent accent-amber"></div>
+      <div class="container">
+
+        <div class="project-meta reveal">
+          <span class="project-index">Project 04</span>
+          <span class="project-industry">Financial Advisory</span>
+        </div>
+        <h2 class="project-heading reveal">Financial Health &amp; Investment Readiness Dashboard</h2>
+        <p class="project-tagline reveal">Client Segmentation &amp; Advisor Enablement</p>
+
+        <div class="screenshot-area reveal">
+          <div class="screenshot-frame">
+            <div class="screenshot-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="screenshot-body screenshot-body--image">
+              <img src="images/image4.png" alt="Financial Health & Investment Readiness Dashboard" />
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-problem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3>Business Problem</h3>
+            </div>
+            <p>Financial advisors need a data-driven way to assess client investment readiness and reduce risk in client targeting and onboarding.</p>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-insights">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M6 20V10M10 20V4M14 20V14M18 20V8"/></svg>
+              </div>
+              <h3>Key Insights</h3>
+            </div>
+            <ul class="insight-list">
+              <li><span class="insight-dot"></span>Majority of clients fall into the Caution segment, with limited fully Ready investors.</li>
+              <li><span class="insight-dot"></span>Many clients cluster in mid-range scores, indicating a need for financial improvement before investing.</li>
+              <li><span class="insight-dot"></span>Strong positive relationship between financial stability and investment recommendation score, validating the scoring model.</li>
+            </ul>
+          </div>
+
+          <div class="detail-card detail-card-wide reveal">
+            <div class="detail-card-header">
+              <div class="detail-icon icon-impact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <h3>Business Impact</h3>
+            </div>
+            <ul class="impact-list">
+              <li>Enables advisors to target investment-ready clients more effectively, improving conversion.</li>
+              <li>Reduces risk by filtering out At Risk profiles before engagement.</li>
+              <li>Supports client progression strategies from Caution to Ready through targeted guidance.</li>
+              <li>Improves decision-making through clear, data-driven segmentation and scoring.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXAMPLE 6: Dedicated Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <p class="contact-label">Get in Touch</p>
+        <h2 class="contact-name">Benjamin Landry</h2>
+        <p class="contact-role">Data Analyst &nbsp;·&nbsp; Business Intelligence &nbsp;·&nbsp; Power BI</p>
+        <a href="mailto:benlandry5@gmail.com" class="contact-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          benlandry5@gmail.com
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span>Power BI Portfolio</span>
+        <p>End-to-end data analytics &mdash; from business problem to boardroom insight.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#project-01">Finance</a>
+        <a href="#project-02">Sales</a>
+        <a href="#project-03">Insurance</a>
+        <a href="#project-04">Investments</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>Built with Power BI &nbsp;&middot;&nbsp; DAX &nbsp;&middot;&nbsp; Power Query</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-scrolled', window.scrollY > 20);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
